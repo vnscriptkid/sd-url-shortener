@@ -1,0 +1,22 @@
+version: '3.9'
+
+services:
+  pg:
+    image: postgres:14.5
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: 123456
+      POSTGRES_USER: postgres
+      POSTGRES_DB: postgres
+    ports:
+      - 5432:5432
+
+  metabase:
+    image: metabase/metabase:latest
+    ports:
+      - 3000:3000
+
+  materialize:
+    image: materialize/materialized:latest
+    ports:
+      - 6875:6875
