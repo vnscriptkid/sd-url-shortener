@@ -1,0 +1,11 @@
+### ES
+GET http://localhost:9200
+
+### Query from index `visits`
+GET http://localhost:9200/visits/_search
+
+### Count from index `visits`
+GET http://localhost:9200/visits/_count
+
+### Delete index `visits`
+DELETE http://localhost:9200/visits
