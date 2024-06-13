@@ -21,8 +21,8 @@
     - Set X-axis to Terms aggregation on referrer.
 
 - Geo-distribution:
-    - Create a Coordinate Map.
-    - Set Aggregation to Geo coordinates (if geo data is available).
+    - Map -> Add layer -> Documents
+    - Set index pattern, select geo field -> Add layer.
 
 - Visit Trends:
     - Create a Line chart.

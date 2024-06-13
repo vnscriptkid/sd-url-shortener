@@ -1,0 +1,18 @@
+# curl -X POST http://localhost:8080/create -H "Content-Type: application/json" -d '{
+#     "shortCode": "abc123",
+#     "originalUrl": "https://example.com"
+# }'
+
+### Create a new short URL
+POST /create
+Content-Type: application/json
+Host: localhost:8080
+
+{
+    "shortCode": "abc123",
+    "originalUrl": "https://example.com"
+}
+
+### Get the original URL for a short URL
+GET /get/abc123
+Host: localhost:8080

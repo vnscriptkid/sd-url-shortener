@@ -10,6 +10,9 @@ materialize:
 up_pg:
 	docker compose up -d pg
 
+up_redis:
+	docker compose up -d redis
+
 up_analytics:
 	docker compose up -d es kibana
 
@@ -21,3 +24,6 @@ kibana:
 
 es:
 	open http://localhost:9200
+
+redis_cli:
+	docker compose exec redis redis-cli
