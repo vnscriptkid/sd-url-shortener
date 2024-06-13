@@ -115,7 +115,10 @@ func generateVisitData() VisitEvent {
 	ipAddress := fmt.Sprintf("192.168.%d.%d", rand.Intn(256), rand.Intn(256))
 	referrer := referrers[rand.Intn(len(referrers))]
 	userAgent := userAgents[rand.Intn(len(userAgents))]
-	geoLocation := GeoPoint{Lat: 37.7749 + rand.Float64()*0.01, Lon: -122.4194 + rand.Float64()*0.01} // Simulate geo-location
+	geoLocation := GeoPoint{
+		Lat: -90 + rand.Float64()*180,
+		Lon: -180 + rand.Float64()*360,
+	}
 	country := countries[rand.Intn(len(countries))]
 	region := regions[rand.Intn(len(regions))]
 	city := cities[rand.Intn(len(cities))]

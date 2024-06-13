@@ -4,6 +4,9 @@ GET http://localhost:9200
 ### Query from index `visits`
 GET http://localhost:9200/visits/_search
 
+### Mapping from index `visits`
+GET http://localhost:9200/visits/_mapping
+
 ### Count from index `visits`
 GET http://localhost:9200/visits/_count
 
