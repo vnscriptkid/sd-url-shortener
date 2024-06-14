@@ -17,3 +17,10 @@
             - Security credentials
                 - Create access key
                 - Grab the access key and secret key
+    - Setup GSI:
+        - Table: `urlShortener`
+        - Indexes
+            - Create index
+                - Partition key: `userId` (Number)
+                - Sort key: `createdAt` (String), ISO 8601 format
+                - Index name: `userId-createdAt-index`

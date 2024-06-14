@@ -18,7 +18,7 @@ func MakeCreateShortURLHandler(db *dynamodb.DynamoDB) func(c *gin.Context) {
 			return
 		}
 
-		mapping.CreatedAt = time.Now().Format(time.RFC3339)
+		mapping.CreatedAt = time.Now().Format(time.RFC3339) // ISO8601 format
 		mapping.UsageCount = 0
 		mapping.IsActive = true
 

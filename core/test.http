@@ -9,10 +9,15 @@ Content-Type: application/json
 Host: localhost:8080
 
 {
-    "shortCode": "abc123",
-    "originalUrl": "https://example.com"
+    "shortCode": "wow300",
+    "originalUrl": "https://wow.com",
+    "userId": 123
 }
 
 ### Get the original URL for a short URL
-GET /get/abc123
+GET /get/abc100
+Host: localhost:8080
+
+### Get urls by user
+GET /geturls/123
 Host: localhost:8080

@@ -43,5 +43,6 @@ func main() {
 
 	r.POST("/create", handlers.MakeCreateShortURLHandler(db))
 	r.GET("/get/:shortCode", handlers.MakeGetOriginalURLHandler(db, rdb))
+	r.GET("/geturls/:userId", handlers.MakeGetURLsByUserHandler(db))
 	r.Run()
 }

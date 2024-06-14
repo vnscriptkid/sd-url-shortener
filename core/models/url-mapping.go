@@ -6,4 +6,5 @@ type URLMapping struct {
 	CreatedAt   string `json:"createdAt"`
 	UsageCount  int    `json:"usageCount"`
 	IsActive    bool   `json:"isActive"`
+	UserID      int    `json:"userId"`
 }
